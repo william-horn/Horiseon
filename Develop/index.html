@@ -1,15 +1,62 @@
+
+<!--
+    Author:                     Horiseon Team
+    Document:                   index.html
+    Document Refactored By:     William J. Horn
+    Date Refactored:            2/13/2022 1:13PM
+    Last Modified:              2/13/2022 1:13PM
+
+    ================
+    == CHANGE LOG ==
+    ================
+
+    ? @info:
+    ----------------------------------------------------------------------------------------------------------------------------------
+    Change log is recorded with change id, denoted by: #change:xxxx-"description about change". The change id index is recorded
+    under "@change-log" and is where all information about the change(s) are stored. Within the document code, a change id is given 
+    near the sections of code that have been modified. The modified code is wrapped between two comment lines that read:
+
+        THIS    #change:xxxx-"description about change" // BEGIN // 
+        AND         ...[[code affected by change]]...
+        THIS    #change:xxxx-"description about change" \\ END \\
+
+    note: The current format for this change log is experimental so any feedback on it's efficacy is appreciated :)
+    ----------------------------------------------------------------------------------------------------------------------------------
+
+    ? @change-log:
+    ----------------------------------------------------------------------------------------------------------------------------------
+    * #change:0001-"<title> tag content replaced"
+        -   Replaced previous <title> tag content from "website" to more descriptive "Horiseon"
+
+    * #change:0002-"replaced <div> with <header>"
+        -   Replaced <div class="header"> tag with semantic <header> tag
+
+    * #change:0003-"changed to semantic"
+        -   Replaced generic <div> tag to semantic <section> tag
+
+    * #change:0004-"removed seo class"
+        -   Removed "seo" class from <span> tag as it was deemed unnecessary. The CSS will now target the span tag instead.
+    ----------------------------------------------------------------------------------------------------------------------------------
+-->
+
 <!DOCTYPE html>
 <html lang="en-us">
 
 <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="./assets/css/style.css">
-    <title>website</title>
+
+    <!-- #change:0001-"<title> tag content replaced" // BEGIN // -->
+    <title>Horiseon</title>
+    <!-- #change:0001-"<title> tag content replaced" \\ END \\ -->
 </head>
 
 <body>
-    <div class="header">
-        <h1>Hori<span class="seo">seo</span>n</h1>
+    <!-- #change:0002-"replaced <div> with <header>" // BEGIN // -->
+    <header>
+        <!-- #change:0004-"removed seo class" // BEGIN // -->
+        <h1>Hori<span>seo</span>n</h1>
+        <!-- #change:0004-"removed seo class" \\ END \\ -->
         <div>
             <ul>
                 <li>
@@ -23,8 +70,13 @@
                 </li>
             </ul>
         </div>
-    </div>
-    <div class="hero"></div>
+    </header>
+    <!-- #change:0002-"replaced <div> with <header>" \\ END \\ -->
+
+    <!-- #change:0003-"changed to semantic" // BEGIN // -->
+    <section class="hero"></section>
+    <!-- #change:0003-"changed to semantic" \\ END \\ -->
+
     <div class="content">
         <div class="search-engine-optimization">
             <img src="./assets/images/search-engine-optimization.jpg" class="float-left" />

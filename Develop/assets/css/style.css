@@ -4,7 +4,7 @@
     Document:                   style.css
     Document Refactored By:     William J. Horn
     Date Refactored:            2/13/2022 1:13PM
-    Last Modified:              2/13/2022 1:13PM
+    Last Modified:              2/13/2022 4:57PM
 
     ================
     == CHANGE LOG ==
@@ -26,11 +26,12 @@
     ? @change-log:
     ----------------------------------------------------------------------------------------------------------------------------------
     * #change:0001-"header class replaced with header selector"
-        !-   Removed all ".header" classes and replaced them with the header element selector.
-            This was done since the header div was removed in the HTML and replaced with the semantic <header> tag)
+        !-   Removed all ".header" becaused it was deemed unnecessary.
+            This class has since been replaced with the header element selector. This was done since the header div was removed 
+            in the HTML and has been replaced with the semantic <header> tag.
 
     * #change:0002-"removed seo class"
-        !-   Removed "seo" class.
+        !-   Removed ".seo" class.
             The "seo" class was replaced with the header->h1->span selector. The specificity of the "seo" class was deemed
             unnecessary because it was only used once.
 
@@ -42,55 +43,36 @@
 
             These CSS classes were replaced by their respective IDs. This was done because these classes were only used once
             in the HTML.
+
+    * #change:0004-"replaced class with footer"
+        !-   Removed ".footer" class because it was deemed unnecessary.
+
+            Replaced ".footer" class with the footer element selector to connect with the semantic <footer> tag that now
+            exists in the HTML.
+    ----------------------------------------------------------------------------------------------------------------------------------
+
+    ? @other-changes:
+    ----------------------------------------------------------------------------------------------------------------------------------
+        -   Added further commenting to explain intention of CSS code
+        -   Re-arranged some of the CSS code blocks to create a more logical grouping of relevant data
     ----------------------------------------------------------------------------------------------------------------------------------
 */
 
+/* Global CSS attributes // BEGIN // */
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
+/* Global CSS attributes \\ END \\ */
 
+
+
+
+/* First-Order miscellaneous element selectors // BEGIN // */
 body {
     background-color: #d9dcd6;
 }
-
-/* #change:0001-"header class replaced with header selector" // BEGIN // */
-header {
-    padding: 20px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: #2a607c;
-    color: #ffffff;
-}
-
-header h1 {
-    display: inline-block;
-    font-size: 48px;
-}
-
-/* #change:0002-"removed seo class" // BEGIN // */
-header h1 span {
-    color: #d9dcd6;
-}
-/* #change:0002-"removed seo class" \\ END \\ */
-
-header div {
-    padding-top: 15px;
-    margin-right: 20px;
-    float: right;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 20px;
-}
-
-header div ul {
-    list-style-type: none;
-}
-
-header div ul li {
-    display: inline-block;
-    margin-left: 25px;
-}
-/* #change:0001-"header class replaced with header selector" \\ END \\ */
 
 a {
     color: #ffffff;
@@ -100,7 +82,12 @@ a {
 p {
     font-size: 16px;
 }
+/* First-Order miscellaneous element selectors \\ END \\ */
 
+
+
+
+/* Specific developer-given classes // BEGIN // */
 .hero {
     height: 800px;
     width: 100%;
@@ -184,7 +171,12 @@ p {
     margin: 10px auto;
     max-width: 150px;
 }
+/* Specific developer-given classes \\ END \\ */
 
+
+
+
+/* Specific developer-given ID names // BEGIN // */
 /* #change:0003-"replaced classes with ID" // BEGIN // */
 #search-engine-optimization {
     margin-bottom: 20px;
@@ -212,7 +204,56 @@ p {
     background-color: #0072bb;
     color: #ffffff;
 }
+/* #change:0003-"replaced classes with ID" \\ END \\ */
+/* Specific developer-given ID names \\ END \\ */
 
+
+
+
+/* #change:0001-"header class replaced with header selector" // BEGIN // */
+/* Webpage <header> settings // BEGIN // */
+header {
+    padding: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #2a607c;
+    color: #ffffff;
+}
+
+header h1 {
+    display: inline-block;
+    font-size: 48px;
+}
+
+/* #change:0002-"removed seo class" // BEGIN // */
+header h1 span {
+    color: #d9dcd6;
+}
+/* #change:0002-"removed seo class" \\ END \\ */
+
+header div {
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+header div ul {
+    list-style-type: none;
+}
+
+header div ul li {
+    display: inline-block;
+    margin-left: 25px;
+}
+/* Webpage <header> settings \\ END \\ */
+/* #change:0001-"header class replaced with header selector" \\ END \\ */
+
+
+
+
+/* Webpage body content selectors // BEGIN // */
+/* #change:0003-"replaced classes with ID" // BEGIN // */
 #search-engine-optimization img {
     max-height: 200px;
 }
@@ -240,14 +281,23 @@ p {
     font-size: 36px;
 }
 /* #change:0003-"replaced classes with ID" \\ END \\ */
+/* Webpage body content selectors \\ END \\ */
 
-.footer {
+
+
+
+/* Webpage footer selector // BEGIN // */
+/* #change:0004-"replaced class with footer" // BEGIN // */
+footer {
     padding: 30px;
     clear: both;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
 }
 
-.footer h2 {
+footer h2 {
     font-size: 20px;
 }
+/* #change:0004-"replaced class with footer" \\ END \\ */
+/* Webpage footer selector \\ END \\ */
+

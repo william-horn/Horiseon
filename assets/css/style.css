@@ -49,6 +49,23 @@
 
             Replaced ".footer" class with the footer element selector to connect with the semantic <footer> tag that now
             exists in the HTML.
+
+    * #change:0005-"updated div to nav"
+        -   Replaced header->div with header->nav to accommodate for the change made in the HTML where:
+            <header>
+                ...
+                <div>...</div>
+                ...
+            </header>
+
+            was changed to:
+
+            <header>
+                ...
+                <nav>...</nav>
+                ...
+            </header>
+
     ----------------------------------------------------------------------------------------------------------------------------------
 
     ? @other-changes:
@@ -230,7 +247,8 @@ header h1 span {
 }
 /* #change:0002-"removed seo class" \\ END \\ */
 
-header div {
+/* #change:0005-"updated div to nav" // BEGIN // */
+header nav {
     padding-top: 15px;
     margin-right: 20px;
     float: right;
@@ -238,14 +256,15 @@ header div {
     font-size: 20px;
 }
 
-header div ul {
+header nav ul {
     list-style-type: none;
 }
 
-header div ul li {
+header nav ul li {
     display: inline-block;
     margin-left: 25px;
 }
+/* #change:0005-"updated div to nav" \\ END \\ */
 /* Webpage <header> settings \\ END \\ */
 /* #change:0001-"header class replaced with header selector" \\ END \\ */
 

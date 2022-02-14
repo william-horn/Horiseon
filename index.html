@@ -41,7 +41,7 @@
     * #change:0005-"replaced <div> with <section>"
         -   Replaced generic <div class="content"> tag with semantic <section class="content"> tag for page content section
 
-    * #change:0006-"replaced div classes with id & added img alts"
+    * #change:0006-"replaced <div> classes with id"
         !-   Removed the following classes in the outer-most <div> tags: 
                 ! class="search-engine-optimization"
                 ! class="online-reputation-management"
@@ -49,8 +49,6 @@
 
             These classes have been replaced with their respective IDs. This was done so that the links in the header will correctly
             navigate to the correct content on the page, while at the same time offering a one-time-use ID in the CSS.
-
-            `alt` attributes were also added to all <img> tags within the change id block.
 
     * #change:0007-"replaced <div> with <section>"
         -   Replaced generic <div class="benefits"> tag with semantic <section class="benefits"> tag for benefits section
@@ -60,6 +58,13 @@
 
     * #change:0009-"replaced <div> with <nav>"
         -   Replaced generic <div> tag with <nav> tag to contain the internal webpage navigation links
+
+    * #change:000a-"replaced <div> with <section>"
+        -   Replaced generic <div> tags with <section> tags. Each content block within the parent container meets the 
+            criteria for a <section> element.
+
+    * #change:000b-"added img alts"
+        -   Added descriptive `alt` attributes to all images within change block.
     ----------------------------------------------------------------------------------------------------------------------------------
 -->
 
@@ -120,29 +125,38 @@
 
         <!-- #change:0005-"replaced <div> with <section>" // BEGIN // -->
         <section class="content">
-            <!-- #change:0006-"replaced div classes with id & added img alts" // BEGIN // -->
-            <div id="search-engine-optimization">
+
+            <!-- #change:0006-"replaced <div> classes with id" // BEGIN // -->
+            <!-- #change:000a-"replaced <div> with <section>" // BEGIN // -->
+            <section id="search-engine-optimization">
+
+                <!-- #change:000b-"added img alts" // BEGIN // -->
                 <img src="./assets/images/search-engine-optimization.jpg" alt="notebook of search engine optimization tactics" class="float-left" />
                 <h2>Search Engine Optimization</h2>
                 <p>
                     The dominance of mobile internet use means that users are searching for the right business as they travel, shop, or sit on their couch at home. Search Engine Optimization (SEO) allows you to increase your visibility and find the right customers for your business.
                 </p>
-            </div>
-            <div id="online-reputation-management">
+            </section>
+
+            <section id="online-reputation-management">
                 <img src="./assets/images/online-reputation-management.jpg" alt="graphing online reputation management on a computer" class="float-right" />
                 <h2>Online Reputation Management</h2>
                 <p>
                     The web is full of opinions, and some of these can be negative. Social media allows anyone with an internet connection to say whatever they want about your business. Online Reputation Management gives you the control over what potential customers see when they search for your business.
                 </p>
-            </div>
-            <div id="social-media-marketing">
+            </section>
+
+            <section id="social-media-marketing">
                 <img src="./assets/images/social-media-marketing.jpg" alt="representation of different social medial platforms" class="float-left" />
+                <!-- #change:000b-"added img alts" \\ END \\ -->
                 <h2>Social Media Marketing</h2>
                 <p>
                     Social media continues to have a sizable influence on buying habits. Social media marketing helps you determine which platforms are suited to your brand, using analytics to find the right markets and increase your lead generation.
                 </p>
-            </div>
-            <!-- #change:0006-"replaced div classes with id & added img alts" \\ END \\ -->
+            </section>
+            <!-- #change:000a-"replaced <div> with <section>" \\ END \\ -->
+            <!-- #change:0006-"replaced <div> classes with id" \\ END \\ -->
+
         </section>
         <!-- #change:0005-"replaced <div> with <section>" \\ END \\ -->
 
@@ -156,6 +170,7 @@
                     Inbound strategies for lead generation require less work for your business, bringing customers directly to your website.
                 </p>
             </div>
+            
             <div class="benefit-brand">
                 <h3>Brand Awareness</h3>
                 <!-- ? alt attribute shouldn't be necessary for this img -->
@@ -164,6 +179,7 @@
                     Users find your business through paid and organic searches, increasing the search ranking and visibility for your business.
                 </p>
             </div>
+
             <div class="benefit-cost">
                 <h3>Cost Management</h3>
                 <!-- ? alt attribute shouldn't be necessary for this img -->

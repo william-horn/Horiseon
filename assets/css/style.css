@@ -4,7 +4,7 @@
     Document:                   style.css
     Document Refactored By:     William J. Horn
     Date Refactored:            2/13/2022 1:13PM
-    Last Modified:              2/13/2022 4:57PM
+    Last Modified:              2/15/2022 12:06PM
 
     ================
     == CHANGE LOG ==
@@ -86,7 +86,7 @@
 
 
 
-/* First-Order miscellaneous element selectors // BEGIN // */
+/* First-Order miscellaneous type selectors // BEGIN // */
 body {
     background-color: #d9dcd6;
 }
@@ -99,12 +99,12 @@ a {
 p {
     font-size: 16px;
 }
-/* First-Order miscellaneous element selectors \\ END \\ */
+/* First-Order miscellaneous type selectors \\ END \\ */
 
 
 
 
-/* Specific developer-given classes // BEGIN // */
+/* Classes selectors // BEGIN // */
 .hero {
     height: 800px;
     width: 100%;
@@ -188,12 +188,12 @@ p {
     margin: 10px auto;
     max-width: 150px;
 }
-/* Specific developer-given classes \\ END \\ */
+/* Class selectors \\ END \\ */
 
 
 
 
-/* Specific developer-given ID names // BEGIN // */
+/* ID selectors // BEGIN // */
 /* #change:0003-"replaced classes with ID" // BEGIN // */
 #search-engine-optimization {
     margin-bottom: 20px;
@@ -222,7 +222,7 @@ p {
     color: #ffffff;
 }
 /* #change:0003-"replaced classes with ID" \\ END \\ */
-/* Specific developer-given ID names \\ END \\ */
+/* ID selectors \\ END \\ */
 
 
 
@@ -271,7 +271,7 @@ header nav ul li {
 
 
 
-/* Webpage body content selectors // BEGIN // */
+/* Webpage body content // BEGIN // */
 /* #change:0003-"replaced classes with ID" // BEGIN // */
 #search-engine-optimization img {
     max-height: 200px;
@@ -300,12 +300,12 @@ header nav ul li {
     font-size: 36px;
 }
 /* #change:0003-"replaced classes with ID" \\ END \\ */
-/* Webpage body content selectors \\ END \\ */
+/* Webpage body content \\ END \\ */
 
 
 
 
-/* Webpage footer selector // BEGIN // */
+/* Webpage footer // BEGIN // */
 /* #change:0004-"replaced class with footer" // BEGIN // */
 footer {
     padding: 30px;
@@ -318,5 +318,5 @@ footer h2 {
     font-size: 20px;
 }
 /* #change:0004-"replaced class with footer" \\ END \\ */
-/* Webpage footer selector \\ END \\ */
+/* Webpage footer \\ END \\ */
 

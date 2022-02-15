@@ -4,7 +4,7 @@
     Document:                   index.html
     Document Refactored By:     William J. Horn
     Date Refactored:            2/13/2022 1:13PM
-    Last Modified:              2/13/2022 4:57PM
+    Last Modified:              2/15/2022 12:03PM
 
     ================
     == CHANGE LOG ==
@@ -41,8 +41,8 @@
     * #change:0005-"replaced <div> with <section>"
         -   Replaced generic <div class="content"> tag with semantic <section class="content"> tag for page content section
 
-    * #change:0006-"replaced <div> classes with id"
-        !-   Removed the following classes in the outer-most <div> tags: 
+    * #change:0006-"replaced <section> classes with id"
+        !-   Removed the following classes in the outer-most <section> tags: 
                 ! class="search-engine-optimization"
                 ! class="online-reputation-management"
                 ! class="social-media-marketing"
@@ -126,8 +126,8 @@
         <!-- #change:0005-"replaced <div> with <section>" // BEGIN // -->
         <section class="content">
 
-            <!-- #change:0006-"replaced <div> classes with id" // BEGIN // -->
             <!-- #change:000a-"replaced <div> with <section>" // BEGIN // -->
+            <!-- #change:0006-"replaced <section> classes with id" // BEGIN // -->
             <section id="search-engine-optimization">
 
                 <!-- #change:000b-"added img alts" // BEGIN // -->
@@ -154,17 +154,18 @@
                     Social media continues to have a sizable influence on buying habits. Social media marketing helps you determine which platforms are suited to your brand, using analytics to find the right markets and increase your lead generation.
                 </p>
             </section>
+            <!-- #change:0006-"replaced <section> classes with id" \\ END \\ -->
             <!-- #change:000a-"replaced <div> with <section>" \\ END \\ -->
-            <!-- #change:0006-"replaced <div> classes with id" \\ END \\ -->
 
         </section>
         <!-- #change:0005-"replaced <div> with <section>" \\ END \\ -->
 
         <!-- #change:0007-"replaced <div> with <section>" // BEGIN // -->
         <section class="benefits">
+
+            <!-- ? alt attribute shouldn't be necessary for these img tags (decorative images) -->
             <div class="benefit-lead">
                 <h3>Lead Generation</h3>
-                <!-- ? alt attribute shouldn't be necessary for this img -->
                 <img src="./assets/images/lead-generation.png" />
                 <p>
                     Inbound strategies for lead generation require less work for your business, bringing customers directly to your website.
@@ -173,7 +174,6 @@
             
             <div class="benefit-brand">
                 <h3>Brand Awareness</h3>
-                <!-- ? alt attribute shouldn't be necessary for this img -->
                 <img src="./assets/images/brand-awareness.png" />
                 <p>
                     Users find your business through paid and organic searches, increasing the search ranking and visibility for your business.
@@ -182,7 +182,6 @@
 
             <div class="benefit-cost">
                 <h3>Cost Management</h3>
-                <!-- ? alt attribute shouldn't be necessary for this img -->
                 <img src="./assets/images/cost-management.png"></img>
                 <p>
                     As the search ranking for your business increases, your advertising costs decrease, and you no longer need to advertise your page.

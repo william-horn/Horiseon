@@ -26,5 +26,5 @@ The rest of the changes made were implementing semantic HTML, and improving read
  
 
 * Reducing clutter
-    - Replacing unnecessary classes in [**#change:0003**](https://github.com/william-horn/horiseon-code-refactor/blob/main/assets/css/style.css#LC38) with type selectors
+    - Replacing unnecessary classes (in [**#change:0003**](https://github.com/william-horn/horiseon-code-refactor/blob/main/assets/css/style.css#LC38) of the [style.css](https://github.com/william-horn/horiseon-code-refactor/blob/main/assets/css/style.css) file) with type selectors
 

@@ -35,14 +35,17 @@
             The "seo" class was replaced with the header->h1->span selector. The specificity of the "seo" class was deemed
             unnecessary because it was only used once.
 
-    * #change:0003-"replaced classes with ID"
+    * #change:0003-"replaced classes with type selector"
         !-   Removed the following CSS classes:
                 ! .search-engine-optimization
                 ! .online-reputation-management
                 ! .social-media-marketing
+                ! .benefit-lead
+                ! .benefit-brand
+                ! .benefit-cost
 
-            These CSS classes were replaced by their respective IDs. This was done because these classes were only used once
-            in the HTML.
+            These CSS classes were replaced with type selectors because they were deemed repetitive and unnecessary.
+            All of the classes listed above that were removed contained identical code within their class declarations.
 
     * #change:0004-"replaced class with footer"
         !-   Removed ".footer" class because it was deemed unnecessary.
@@ -104,7 +107,7 @@ p {
 
 
 
-/* Classes selectors // BEGIN // */
+/* Class selectors // BEGIN // */
 .hero {
     height: 800px;
     width: 100%;
@@ -140,80 +143,30 @@ p {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #2589bd;
 }
-
-.benefit-lead {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.benefit-brand {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.benefit-cost {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.benefit-lead h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-brand h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-cost h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-lead img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-.benefit-brand img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-.benefit-cost img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
 /* Class selectors \\ END \\ */
 
 
 
 
-/* ID selectors // BEGIN // */
-/* #change:0003-"replaced classes with ID" // BEGIN // */
-#search-engine-optimization {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
+/* Second-Order type selectors // BEGIN // */
+/* #change:0003-"replaced classes with type selector" // BEGIN // */
+.benefits div {
+    margin-bottom: 32px;
     color: #ffffff;
 }
 
-#online-reputation-management {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
+.benefits h3 {
+    margin-bottom: 10px;
+    text-align: center;
 }
 
-#social-media-marketing {
+.benefits img {
+    display: block;
+    margin: 10px auto;
+    max-width: 150px;
+}
+
+.content section {
     margin-bottom: 20px;
     padding: 50px;
     height: 300px;
@@ -221,14 +174,28 @@ p {
     background-color: #0072bb;
     color: #ffffff;
 }
-/* #change:0003-"replaced classes with ID" \\ END \\ */
-/* ID selectors \\ END \\ */
+/* Second-Order type selectors \\ END \\ */
+
+
+
+
+/* Third-Order type selectors // BEGIN // */
+.content section img {
+    max-height: 200px;
+}
+
+.content section h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+/* Third-Order type selectors \\ END \\ */
+/* #change:0003-"replaced classes with type selector" \\ END \\ */
 
 
 
 
 /* #change:0001-"header class replaced with header selector" // BEGIN // */
-/* Webpage <header> settings // BEGIN // */
+/* Webpage header settings // BEGIN // */
 header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -265,42 +232,8 @@ header nav ul li {
     margin-left: 25px;
 }
 /* #change:0005-"updated div to nav" \\ END \\ */
-/* Webpage <header> settings \\ END \\ */
+/* Webpage header settings \\ END \\ */
 /* #change:0001-"header class replaced with header selector" \\ END \\ */
-
-
-
-
-/* Webpage body content // BEGIN // */
-/* #change:0003-"replaced classes with ID" // BEGIN // */
-#search-engine-optimization img {
-    max-height: 200px;
-}
-
-#online-reputation-management img {
-    max-height: 200px;
-}
-
-#social-media-marketing img {
-    max-height: 200px;
-}
-
-#search-engine-optimization h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-#online-reputation-management h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-#social-media-marketing h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-/* #change:0003-"replaced classes with ID" \\ END \\ */
-/* Webpage body content \\ END \\ */
 
 
 

@@ -48,7 +48,8 @@
                 ! class="social-media-marketing"
 
             These classes have been replaced with their respective IDs. This was done so that the links in the header will correctly
-            navigate to the correct content on the page, while at the same time offering a one-time-use ID in the CSS.
+            navigate to the correct content on the page, and because the classes were replaced with type selectors in the CSS due to
+            repetitive code (multiple different class declarations with the same properties).
 
     * #change:0007-"replaced <div> with <section>"
         -   Replaced generic <div class="benefits"> tag with semantic <section class="benefits"> tag for benefits section
@@ -65,6 +66,10 @@
 
     * #change:000b-"added img alts"
         -   Added descriptive `alt` attributes to all images within change block.
+
+    * #change:000c-"removed all classes in section"
+        -   All classes within this section were removed due to repetitive code in the CSS (multiple different class declarations
+            storing the same properties). These classes have been replaced with type selectors.
     ----------------------------------------------------------------------------------------------------------------------------------
 -->
 
@@ -163,8 +168,9 @@
         <!-- #change:0007-"replaced <div> with <section>" // BEGIN // -->
         <section class="benefits">
 
+            <!-- #change:000c-"removed all classes in section" // BEGIN // -->
             <!-- ? alt attribute shouldn't be necessary for these img tags (decorative images) -->
-            <div class="benefit-lead">
+            <div>
                 <h3>Lead Generation</h3>
                 <img src="./assets/images/lead-generation.png" />
                 <p>
@@ -172,7 +178,7 @@
                 </p>
             </div>
             
-            <div class="benefit-brand">
+            <div>
                 <h3>Brand Awareness</h3>
                 <img src="./assets/images/brand-awareness.png" />
                 <p>
@@ -180,13 +186,15 @@
                 </p>
             </div>
 
-            <div class="benefit-cost">
+            <div>
                 <h3>Cost Management</h3>
                 <img src="./assets/images/cost-management.png"></img>
                 <p>
                     As the search ranking for your business increases, your advertising costs decrease, and you no longer need to advertise your page.
                 </p>
             </div>
+            <!-- #change:000c-"removed all classes in section" \\ END \\ -->
+
         </section>
         <!-- #change:0007-"replaced <div> with <section>" \\ END \\ -->
 

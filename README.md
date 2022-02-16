@@ -28,3 +28,8 @@ The rest of the changes made were implementing semantic HTML, and improving read
 * Reducing clutter
     - Replacing unnecessary classes (in [**#change:0003**](https://github.com/william-horn/horiseon-code-refactor/blob/main/assets/css/style.css#LC38) of the [style.css](https://github.com/william-horn/horiseon-code-refactor/blob/main/assets/css/style.css) file) with type selectors
 
+# Live Page
+
+![Landing page for Horiseon](./assets/images/01-html-css-git-homework-demo.png)
+
+Click [here](https://william-horn.github.io/horiseon-code-refactor/) to visit page

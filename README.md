@@ -1,6 +1,6 @@
 # Horiseon Code Refactor
 
-This is a refactored codebase for the original Horiseon website. The goal was to take in a semi-functioning website with minor bugs and sub-standard code and touch it up a bit. Languages affected by the refactor:
+This is a refactored codebase for the original Horiseon website. The goal was to take in a semi-functioning website with minor bugs and sub-standard code and touch it up a bit. Technologies involved with refactor:
 
 - **HTML**
 - **CSS**

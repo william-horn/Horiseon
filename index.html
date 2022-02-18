@@ -4,7 +4,7 @@
     Document:                   index.html
     Document Refactored By:     William J. Horn
     Date Refactored:            2/13/2022 1:13PM
-    Last Modified:              2/15/2022 12:03PM
+    Last Modified:              2/18/2022 5:36PM
 
     ================
     == CHANGE LOG ==
@@ -20,11 +20,11 @@
         AND         ...[[code affected by change]]...
         THIS    #change:xxxx-"description about change" \\ END \\
 
-    note: The current format for this change log is experimental so any feedback on it's efficacy is appreciated :)
-    ----------------------------------------------------------------------------------------------------------------------------------
-
     ? @change-log:
     ----------------------------------------------------------------------------------------------------------------------------------
+    | Date: 2/15/2022 |
+    -------------------
+
     * #change:0001-"<title> tag content replaced"
         -   Replaced previous <title> tag content from "website" to more descriptive "Horiseon"
 
@@ -67,9 +67,29 @@
     * #change:000b-"added img alts"
         -   Added descriptive `alt` attributes to all images within change block.
 
-    * #change:000c-"removed all classes in section"
-        -   All classes within this section were removed due to repetitive code in the CSS (multiple different class declarations
-            storing the same properties). These classes have been replaced with type selectors.
+    * #change:000c-"removed all <div> classes"
+        -   All div classes within this change block were removed due to repetitive code in the CSS (multiple different class declarations
+            storing the same properties). These classes have been replaced with element selectors.
+
+    ----------------------------------------------------------------------------------------------------------------------------------
+    | Date: 2/18/2022 |
+    -------------------
+
+    * #change:000d-"replaced <h2> with more sequential <h4>"
+        -   As pointed out by the review team, the heading tag within the footer should follow the sequential order of heading tags (h1->h2->...->h6),
+            so the previous <h2> tag was replaced with a more appropriate <h4> tag
+
+    * #change:000e-"corrected bad <img> tag practices"
+        -   Upon further research, it has come to my attention that img tags should ALWAYS contain an alt attribute. If the image is decorative, it should
+            still have an empty alt field (alt=""). Therefore all img tags without an alt attribute have been given one.
+
+        -   Furthermore, changed deprecated practice <img></img> closing tag to modern practice <img/> closing tag.
+
+    ----------------------------------------------------------------------------------------------------------------------------------
+
+    ? @other-changes:
+    ----------------------------------------------------------------------------------------------------------------------------------
+    -- none
     ----------------------------------------------------------------------------------------------------------------------------------
 -->
 
@@ -170,11 +190,11 @@
         <!-- #change:0007-"replaced <div> with <section>" // BEGIN // -->
         <section class="benefits">
 
-            <!-- #change:000c-"removed all classes in section" // BEGIN // -->
-            <!-- ? alt attribute shouldn't be necessary for these img tags (decorative images) -->
+            <!-- #change:000c-"removed all <div> classes" // BEGIN // -->
+            <!-- #change:000e-"corrected bad <img> tag practices" // BEGIN // -->
             <div>
                 <h3>Lead Generation</h3>
-                <img src="./assets/images/lead-generation.png" />
+                <img src="./assets/images/lead-generation.png" alt=""/>
                 <p>
                     Inbound strategies for lead generation require less work for your business, bringing customers directly to your website.
                 </p>
@@ -182,7 +202,7 @@
             
             <div>
                 <h3>Brand Awareness</h3>
-                <img src="./assets/images/brand-awareness.png" />
+                <img src="./assets/images/brand-awareness.png" alt=""/>
                 <p>
                     Users find your business through paid and organic searches, increasing the search ranking and visibility for your business.
                 </p>
@@ -190,22 +210,28 @@
 
             <div>
                 <h3>Cost Management</h3>
-                <img src="./assets/images/cost-management.png"></img>
+                <img src="./assets/images/cost-management.png" alt=""/>
                 <p>
                     As the search ranking for your business increases, your advertising costs decrease, and you no longer need to advertise your page.
                 </p>
             </div>
-            <!-- #change:000c-"removed all classes in section" \\ END \\ -->
+            <!-- #change:000e-"corrected bad <img> tag practices" \\ END \\ -->
+            <!-- #change:000c-"removed all <div> classes" \\ END \\ -->
 
         </section>
         <!-- #change:0007-"replaced <div> with <section>" \\ END \\ -->
 
         <!-- #change:0008-"replaced <div> with <footer>" // BEGIN // -->
         <footer>
-            <h2>Made with ❤️️ by Horiseon</h2>
+
+            <!-- #change:000d-"replaced <h2> with more sequential <h4>" // BEGIN // -->
+            <h4>Made with ❤️️ by Horiseon</h4>
+            <!-- #change:000d-"replaced <h2> with more sequential <h4>" \\ END \\ -->
+
             <p>
                 &copy; 2019 Horiseon Social Solution Services, Inc.
             </p>
+
         </footer>
         <!-- #change:0008-"replaced <div> with <footer>" \\ END \\ -->
     </body>

@@ -4,7 +4,7 @@
     Document:                   style.css
     Document Refactored By:     William J. Horn
     Date Refactored:            2/13/2022 1:13PM
-    Last Modified:              2/15/2022 12:06PM
+    Last Modified:              2/18/2022 5:36PM
 
     ================
     == CHANGE LOG ==
@@ -19,12 +19,13 @@
         THIS    #change:xxxx-"description about change" // BEGIN // 
         AND         ...[[code affected by change]]...
         THIS    #change:xxxx-"description about change" \\ END \\
-
-    note: The current format for this change log is experimental so any feedback on it's efficacy is appreciated :)
     ----------------------------------------------------------------------------------------------------------------------------------
 
     ? @change-log:
     ----------------------------------------------------------------------------------------------------------------------------------
+    | Date: 2/15/2022 |
+    -------------------
+
     * #change:0001-"header class replaced with header selector"
         !-   Removed all ".header" becaused it was deemed unnecessary.
             This class has since been replaced with the header element selector. This was done since the header div was removed 
@@ -35,7 +36,7 @@
             The "seo" class was replaced with the header->h1->span selector. The specificity of the "seo" class was deemed
             unnecessary because it was only used once.
 
-    * #change:0003-"replaced classes with type selector"
+    * #change:0003-"replaced classes with element selector"
         !-   Removed the following CSS classes:
                 ! .search-engine-optimization
                 ! .online-reputation-management
@@ -44,7 +45,7 @@
                 ! .benefit-brand
                 ! .benefit-cost
 
-            These CSS classes were replaced with type selectors because they were deemed repetitive and unnecessary.
+            These CSS classes were replaced with element selectors because they were deemed repetitive and unnecessary.
             All of the classes listed above that were removed contained identical code within their class declarations.
 
     * #change:0004-"replaced class with footer"
@@ -70,10 +71,17 @@
             </header>
 
     ----------------------------------------------------------------------------------------------------------------------------------
+    | Date: 2/18/2022 |
+    -------------------
+
+    * #change:0006-"updated h2 to h4"
+        - Updated the "footer h2" selector to "footer h4" due to changes made in the HTML
+
+    ----------------------------------------------------------------------------------------------------------------------------------
 
     ? @other-changes:
     ----------------------------------------------------------------------------------------------------------------------------------
-        -   Added further commenting to explain intention of CSS code
+        -   Added further commenting to explain intention of CSS code 
         -   Re-arranged some of the CSS code blocks to create a more logical grouping of relevant data
     ----------------------------------------------------------------------------------------------------------------------------------
 */
@@ -89,7 +97,7 @@
 
 
 
-/* First-Order miscellaneous type selectors // BEGIN // */
+/* First-Order element selectors // BEGIN // */
 body {
     background-color: #d9dcd6;
 }
@@ -102,7 +110,7 @@ a {
 p {
     font-size: 16px;
 }
-/* First-Order miscellaneous type selectors \\ END \\ */
+/* First-Order element selectors \\ END \\ */
 
 
 
@@ -148,8 +156,8 @@ p {
 
 
 
-/* Second-Order type selectors // BEGIN // */
-/* #change:0003-"replaced classes with type selector" // BEGIN // */
+/* Second-Order selectors // BEGIN // */
+/* #change:0003-"replaced classes with element selector" // BEGIN // */
 .benefits div {
     margin-bottom: 32px;
     color: #ffffff;
@@ -174,12 +182,12 @@ p {
     background-color: #0072bb;
     color: #ffffff;
 }
-/* Second-Order type selectors \\ END \\ */
+/* Second-Order selectors \\ END \\ */
 
 
 
 
-/* Third-Order type selectors // BEGIN // */
+/* Third-Order selectors // BEGIN // */
 .content section img {
     max-height: 200px;
 }
@@ -188,8 +196,8 @@ p {
     margin-bottom: 20px;
     font-size: 36px;
 }
-/* Third-Order type selectors \\ END \\ */
-/* #change:0003-"replaced classes with type selector" \\ END \\ */
+/* Third-Order selectors \\ END \\ */
+/* #change:0003-"replaced classes with element selector" \\ END \\ */
 
 
 
@@ -247,7 +255,7 @@ footer {
     text-align: center;
 }
 
-footer h2 {
+footer h4 {
     font-size: 20px;
 }
 /* #change:0004-"replaced class with footer" \\ END \\ */
